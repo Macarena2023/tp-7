@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    h1 { color: #333; }
+    nav { margin: 20px 0; }
+    a { margin: 0 10px; text-decoration: none; color: #007BFF; }
+    a:hover { text-decoration: underline; }
+ </style>
+</head>
+<body>
+  <h1>Bienvenido a mi aplicación Flask</h1>
+  <nav>
+    <a href="/">Inicio</a>
+    <a href="/contacto">Contacto</a>
+    <a href="/perfil/usuario">Perfil</a>
+  </nav>
+  <img src="{{ url_for('static', filename='img/bkdk.jpg') }}" alt="Imagen
+  de perfil">
+</body>
+</html>

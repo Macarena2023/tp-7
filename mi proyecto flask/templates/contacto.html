@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    form { max-width: 300px; margin: 20px auto; }
+    label { display: block; margin-bottom: 5px; }
+    input, textarea { width: 100%; margin-bottom: 10px; padding: 8px; }
+    button { padding: 8px 12px; background-color: #007BFF; color: white;
+border: none; cursor: pointer; }
+   button:hover { background-color: #0056b3; }
+ </style>
+</head>
+<body>
+ <h1>Contacto</h1>
+ <form action="/contacto" method="post">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" required>
+  <label for="mensaje">Mensaje:</label>
+  <textarea id="mensaje" name="mensaje" required></textarea>
+  <button type="submit">Enviar</button>
+ </form>
+</body>
+</html>
